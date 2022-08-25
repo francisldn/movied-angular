@@ -1,0 +1,59 @@
+<div>
+  <div class="flex flex-col">
+    <h2 class="text-white pb-8 text-4xl">Box Office</h2>
+    <div class="flex gap-[5%] overflow-x-scroll scrollbar">
+      <a *ngFor="let movie of boxOffice" routerLink= "/{{movie.id}}">
+        <app-movielistitem [movieImg]="movie.poster_path" [movieTitle]="movie.title"></app-movielistitem>
+      </a>
+    </div>
+  </div>
+  <div class="flex flex-col pt-8">
+    <h2 class="text-white pb-8 text-4xl">Comedy</h2>
+    <div class="flex gap-[5%] overflow-x-scroll scrollbar">
+      <a *ngFor="let movie of comedyMovies" routerLink= "/{{movie.id}}">
+        <app-movielistitem [movieImg]="movie.poster_path" [movieTitle]="movie.title"></app-movielistitem>
+      </a>
+    </div>
+  </div>
+  <div class="flex flex-col pt-8">
+    <h2 class="text-white pb-8 text-4xl">Crime</h2>
+    <div class="flex gap-[5%] overflow-x-scroll scrollbar">
+      <a *ngFor="let movie of crimeMovies" routerLink= "/{{movie.id}}">
+        <app-movielistitem [movieImg]="movie.poster_path" [movieTitle]="movie.title"></app-movielistitem>
+      </a>
+    </div>
+  </div>
+  <div class="flex flex-col pt-8">
+    <h2 class="text-white pb-8 text-4xl">Action</h2>
+    <div class="flex gap-[5%] overflow-x-scroll scrollbar">
+      <a *ngFor="let movie of actionMovies" routerLink= "/{{movie.id}}">
+        <app-movielistitem [movieImg]="movie.poster_path" [movieTitle]="movie.title"></app-movielistitem>
+      </a>
+    </div>
+  </div>
+  <div class="flex flex-col pt-8">
+    <h2 class="text-white pb-8 text-4xl">Documentary</h2>
+    <div class="flex gap-[5%] overflow-x-scroll scrollbar">
+      <a *ngFor="let movie of documentaryMovies" routerLink= "/{{movie.id}}">
+        <app-movielistitem [movieImg]="movie.poster_path" [movieTitle]="movie.title"></app-movielistitem>
+      </a>
+    </div>
+  </div>
+  <div class="flex flex-col pt-8">
+    <h2 class="text-white pb-8 text-4xl">Animation</h2>
+    <div class="flex gap-[5%] overflow-x-scroll scrollbar">
+      <a *ngFor="let movie of animationMovies" routerLink= "/{{movie.id}}">
+        <app-movielistitem [movieImg]="movie.poster_path" [movieTitle]="movie.title"></app-movielistitem>
+      </a>
+    </div>
+  </div>
+  <div class="flex flex-col pt-8">
+    <h2 class="text-white pb-8 text-4xl">Drama</h2>
+    <div class="flex gap-[5%] overflow-x-scroll scrollbar">
+      <a *ngFor="let movie of dramaMovies" routerLink= "/{{movie.id}}">
+        <app-movielistitem [movieImg]="movie.poster_path" [movieTitle]="movie.title"></app-movielistitem>
+      </a>
+    </div>
+  </div>
+
+</div>
